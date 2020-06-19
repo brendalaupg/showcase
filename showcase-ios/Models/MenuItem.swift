@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MenuItem: Decodable, Hashable {
+struct MenuItem: Codable, Hashable {
     public var title: String
     public var description: String?
 

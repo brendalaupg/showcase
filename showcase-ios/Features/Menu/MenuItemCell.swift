@@ -12,7 +12,8 @@ class MenuItemCell: UICollectionViewCell {
     static let reuseIdentifier: String = "MenuItemCell"
 
     // MARK: - Variables
-    private var titleLabel: UILabel = UILabel()
+    private var titleLabel = UILabel()
+    private var lineView = UIView()
 
     // MARK: - Initialization
     override init(frame: CGRect) {
@@ -41,5 +42,9 @@ extension MenuItemCell {
         contentView.addSubview(titleLabel)
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.fitToSuperview(padding: 20)
+
+        lineView.backgroundColor = .systemGray
+        lineView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        contentView.addSubview(lineView)
     }
 }

@@ -9,3 +9,8 @@
 import UIKit
 
 typealias CollectionCellConfigurator = (UICollectionView, IndexPath, MenuItem) -> UICollectionViewCell?
+
+enum Section: CaseIterable {
+    case main
+}
+

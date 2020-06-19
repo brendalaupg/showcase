@@ -9,10 +9,6 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-    enum Section: CaseIterable {
-        case main
-    }
-
     // MARK: - Variables
     private var dataSource: UICollectionViewDiffableDataSource<Section, MenuItem>?
     private var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -78,6 +74,11 @@ extension MenuViewController {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension MenuViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: select item
+        guard let item = self.dataSource?.itemIdentifier(for: indexPath) else {
+            return
+        }
+
+        let flowLayoutVC = FlowLayoutViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        self.navigationController?.pushViewController(flowLayoutVC, animated: true)
     }
 }

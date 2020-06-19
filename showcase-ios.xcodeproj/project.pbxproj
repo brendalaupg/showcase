@@ -15,8 +15,13 @@
 		53173773249BAB2800E6C94A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53173772249BAB2800E6C94A /* MenuItem.swift */; };
 		53173775249BABD200E6C94A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53173774249BABD200E6C94A /* MenuViewController.swift */; };
 		53173778249BB2D100E6C94A /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53173777249BB2D100E6C94A /* MenuItemCell.swift */; };
-		5317377A249BB6CE00E6C94A /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53173779249BB6CE00E6C94A /* CellConfigurator.swift */; };
+		5317377A249BB6CE00E6C94A /* DiffableDataSource+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53173779249BB6CE00E6C94A /* DiffableDataSource+Helper.swift */; };
 		5317377C249BBC7400E6C94A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317377B249BBC7400E6C94A /* UIView+Constraints.swift */; };
+		53B7965D249CF2A4001471B1 /* FlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7965C249CF2A4001471B1 /* FlowLayoutViewController.swift */; };
+		53B7965F249CF2F7001471B1 /* Showcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7965E249CF2F7001471B1 /* Showcase.swift */; };
+		53B79661249CF424001471B1 /* ShowcaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B79660249CF424001471B1 /* ShowcaseCell.swift */; };
+		53B79663249CF698001471B1 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B79662249CF698001471B1 /* ControlView.swift */; };
+		53B79665249CF81F001471B1 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B79664249CF81F001471B1 /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +35,13 @@
 		53173772249BAB2800E6C94A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		53173774249BABD200E6C94A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		53173777249BB2D100E6C94A /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
-		53173779249BB6CE00E6C94A /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		53173779249BB6CE00E6C94A /* DiffableDataSource+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiffableDataSource+Helper.swift"; sourceTree = "<group>"; };
 		5317377B249BBC7400E6C94A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		53B7965C249CF2A4001471B1 /* FlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutViewController.swift; sourceTree = "<group>"; };
+		53B7965E249CF2F7001471B1 /* Showcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showcase.swift; sourceTree = "<group>"; };
+		53B79660249CF424001471B1 /* ShowcaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseCell.swift; sourceTree = "<group>"; };
+		53B79662249CF698001471B1 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		53B79664249CF81F001471B1 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5317376F249BAB0600E6C94A /* Menu */,
+				53B7965B249CF251001471B1 /* CustomFlowLayouts */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				53173772249BAB2800E6C94A /* MenuItem.swift */,
+				53B7965E249CF2F7001471B1 /* Showcase.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,7 +117,9 @@
 		53173776249BAC3200E6C94A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				53173779249BB6CE00E6C94A /* CellConfigurator.swift */,
+				53B79666249CFFE6001471B1 /* DynamicInputs */,
+				53B79667249D0011001471B1 /* Showcase */,
+				53173779249BB6CE00E6C94A /* DiffableDataSource+Helper.swift */,
 				5317377B249BBC7400E6C94A /* UIView+Constraints.swift */,
 			);
 			path = Shared;
@@ -117,6 +131,31 @@
 				53173763249BAA2A00E6C94A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		53B7965B249CF251001471B1 /* CustomFlowLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				53B7965C249CF2A4001471B1 /* FlowLayoutViewController.swift */,
+			);
+			path = CustomFlowLayouts;
+			sourceTree = "<group>";
+		};
+		53B79666249CFFE6001471B1 /* DynamicInputs */ = {
+			isa = PBXGroup;
+			children = (
+				53B79662249CF698001471B1 /* ControlView.swift */,
+				53B79664249CF81F001471B1 /* InputView.swift */,
+			);
+			path = DynamicInputs;
+			sourceTree = "<group>";
+		};
+		53B79667249D0011001471B1 /* Showcase */ = {
+			isa = PBXGroup;
+			children = (
+				53B79660249CF424001471B1 /* ShowcaseCell.swift */,
+			);
+			path = Showcase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +232,14 @@
 				53173775249BABD200E6C94A /* MenuViewController.swift in Sources */,
 				53173773249BAB2800E6C94A /* MenuItem.swift in Sources */,
 				53173778249BB2D100E6C94A /* MenuItemCell.swift in Sources */,
+				53B79663249CF698001471B1 /* ControlView.swift in Sources */,
 				5317375B249BAA2900E6C94A /* AppDelegate.swift in Sources */,
-				5317377A249BB6CE00E6C94A /* CellConfigurator.swift in Sources */,
+				53B79661249CF424001471B1 /* ShowcaseCell.swift in Sources */,
+				5317377A249BB6CE00E6C94A /* DiffableDataSource+Helper.swift in Sources */,
 				5317375D249BAA2900E6C94A /* SceneDelegate.swift in Sources */,
+				53B79665249CF81F001471B1 /* InputView.swift in Sources */,
+				53B7965D249CF2A4001471B1 /* FlowLayoutViewController.swift in Sources */,
+				53B7965F249CF2F7001471B1 /* Showcase.swift in Sources */,
 				5317377C249BBC7400E6C94A /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
